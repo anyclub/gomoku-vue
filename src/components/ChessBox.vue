@@ -47,43 +47,42 @@ export default {
 #chess-box {
   width: 80vh;
   height: 80vh;
-  overflow: hidden;
   border: 1px solid #0776a6;
   background: #194d6d;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.7);
   border-radius: 6px;
 }
 .cell {
-  background: url("~@/assets/img/bg-square.png") center center no-repeat;
+  background: @cell-bg center center no-repeat;
 
   &.left {
-    background-image: url("~@/assets/img/bg-square-l.png");
+    background-image: @cell-bg-l;
   }
 
   &.right {
-    background-image: url("~@/assets/img/bg-square-r.png");
+    background-image: @cell-bg-r;
   }
 
   &.top {
-    background-image: url("~@/assets/img/bg-square-t.png");
+    background-image: @cell-bg-t;
 
     &.left {
-      background-image: url("~@/assets/img/bg-square-tl.png");
+      background-image: @cell-bg-tl;
     }
 
     &.right {
-      background-image: url("~@/assets/img/bg-square-tr.png");
+      background-image: @cell-bg-tr;
     }
   }
   &.bottom {
-    background-image: url("~@/assets/img/bg-square-b.png");
+    background-image: @cell-bg-b;
 
     &.left {
-      background-image: url("~@/assets/img/bg-square-bl.png");
+      background-image: @cell-bg-bl;
     }
 
     &.right {
-      background-image: url("~@/assets/img/bg-square-br.png");
+      background-image: @cell-bg-br;
     }
   }
 }
@@ -95,13 +94,13 @@ export default {
   background-position: center center;
   background-size: cover;
   &:hover {
-    background-image: url("~@/assets/img/chess-w.png");
+    background-image: @chess-b;
   }
   &.white {
-    background-image: url("~@/assets/img/chess-w.png");
+    background-image: @chess-w;
   }
   &.black {
-    background-image: url("~@/assets/img/chess-b.png");
+    background-image: @chess-b;
   }
 }
 </style>

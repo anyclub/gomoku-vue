@@ -27,8 +27,6 @@ export default {
 
 <style lang="less">
 .ChessBoard {
-  width: 100%;
   height: 100%;
-  background: url("~@/assets/img/bg.jpg");
 }
 </style>

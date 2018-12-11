@@ -23,6 +23,9 @@ body,
   height: 100%;
   overflow: hidden;
 }
+#app {
+  background: @body-bg;
+}
 * {
   box-sizing: border-box;
 }
