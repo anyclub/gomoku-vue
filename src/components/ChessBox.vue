@@ -2,13 +2,14 @@
   <div id="chess-box"
     flex="dir:top box:mean">
     <div flex="box:mean"
-      v-for="row in 15"
+      v-for="row in rows"
       :key="row">
       <div class="cell"
-        v-for="column in 15"
+        v-for="column in columns"
         :class="computedClass(row, column)"
         :key="column">
-        <div class="chess"></div>
+        <div class="chess"
+          @click="setChess(row, column, 'black')"></div>
       </div>
     </div>
   </div>
@@ -38,6 +39,11 @@ export default {
         className += 'right'
       }
       return className
+    },
+    setChess (row, column, type) {
+      this.$store.commit('SET_CHESS', {
+        row, column, type
+      })
     }
   }
 }

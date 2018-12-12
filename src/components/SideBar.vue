@@ -57,7 +57,6 @@ export default {
   margin: 20px 0;
 }
 .chess {
-  margin-right: 5px;
   width: 38px;
   height: 38px;
   background-position: center center;
