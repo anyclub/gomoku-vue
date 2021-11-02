@@ -1,22 +1,19 @@
 <template>
-  <div id="chess-box"
-    flex="dir:top box:mean">
-    <div flex="box:mean"
-      v-for="row in rows"
-      :key="row">
-      <div class="cell"
+  <div id="chess-box" flex="dir:top box:mean">
+    <div flex="box:mean" v-for="row in rows" :key="row">
+      <div
+        class="cell"
         v-for="column in columns"
         :class="computedClass(row, column)"
-        :key="column">
-        <div class="chess"
-          @click="setChess(row, column, 'black')"></div>
+        :key="column"
+      >
+        <div class="chess" @click="setChess(row, column, 'black')"></div>
       </div>
     </div>
   </div>
 </template>
 
 <script>
-
 export default {
   name: 'chessBox',
   data () {
@@ -42,7 +39,9 @@ export default {
     },
     setChess (row, column, type) {
       this.$store.commit('SET_CHESS', {
-        row, column, type
+        row,
+        column,
+        type
       })
     }
   }
