@@ -43,6 +43,8 @@ export default {
         column,
         type
       })
+
+      console.log('22222')
     }
   }
 }
