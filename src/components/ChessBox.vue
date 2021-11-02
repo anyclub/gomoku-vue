@@ -44,7 +44,7 @@ export default {
         type
       })
 
-      console.log('1111')
+      console.log('44444')
     }
   }
 }
