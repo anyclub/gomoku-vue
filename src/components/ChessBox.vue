@@ -47,6 +47,8 @@ export default {
       console.log('44444')
 
       console.log('feature')
+
+      console.log('feature222')
     }
   }
 }
