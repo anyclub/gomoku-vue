@@ -35,6 +35,8 @@ export default {
       } else if (column === this.columns) {
         className += 'right'
       }
+
+      console.log('className :', className)
       return className
     },
     setChess (row, column, type) {
