@@ -17,6 +17,7 @@
 export default {
   name: 'chessBox',
   data () {
+    console.log('feature commit')
     return {
       rows: 15,
       columns: 15
